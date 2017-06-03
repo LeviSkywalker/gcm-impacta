@@ -1,0 +1,98 @@
+Ex01
+- Refere-se à disciplina de avaliação, coordenação, aprovação ou rejeição, 
+e implementação de mudanças em artefatos (Documentação, software ou hardware) que são usados 
+para construir e manter sistemas de software.
+
+Ex02
+1- Hardware
+2- Documentos de Requisitos
+3- Especificação e projeto
+4- Código Fonte
+5- Descrição do Banco de Dados
+6- Plano de testes
+7- Manuais
+
+Ex03
+- inicial: Fase Inicial
+- Build: Software Compilado
+- Release: Produto aprovado e 
+disponibilizado para uso geral
+
+Ex04
+- Git
+- Subversion
+- CVS
+- Borland StarTeam
+- Mercurial
+
+Ex05
+Existem dois tipos de controle de Versão:
+- Distribuido:
+  - No controle de versão distribuído cada desenvolvedor possui um repositório
+   próprio acoplado a uma área de trabalho. Cada repositório possui uma área de trabalho acoplada.
+
+- Centralizado
+  - No controle de versão centralizado há um único repositório
+  e várias cópias de trabalho que se comunicam apenas através do repositório central.
+ 
+Ex06
+- Confiabilidade. No sistema centralizado, uma pane no servidor 
+ interrompe todo o desenvolvimento. Já no sistema distribuído, 
+ além de a equipe poder continuar seu trabalho, 
+ os repositórios dos desenvolvedores funcionam como 
+ cópias de backup de todo o projeto.
+
+Ex07
+- Não, apenas está sendo criado um repositório remoto no GitHub. Para ter um repositório local, 
+é necessário a execução de um "clone", onde o repositório remoto, é clonado para um repositório local 
+na maquina do usuário.
+
+Ex08
+- Pull
+- Push
+- Commit
+- Checkout
+- Merge
+
+Ex09
+- Algoritmo final:
+  
+#file quadrado.py
+print('inicio')
+n1 = int(input('n1:'))
+#calculo do quadrado
+quadradado = n1*n2
+print(quadrado)
+print('fim')
+
+Sim, ocorrerá um conflito. Pois na segunda branch, foi codificado algo diferente
+na mesma linha em comparação com a primeira branch.Um conflito ocorre quando duas pessoas alteram as mesma linhas
+de código (ou a mesma linha) de um mesmo arquivo fonte. 
+O conflito está a partir dessa linha:
+
+#file quadrado.py
+print('inicio')
+n1 = int(input('n1:'))
+
+<<<<<<<< b1
+quadradado = n1*n2
+print(quadrado)
+==========
+#calculo do quadrado
+>>>>>> master
+
+print('fim')
+
+
+Ex10
+- Algoritmo final
+
+#file dobro.py
+print('inicio')
+n1 = int(input('n1:'))
+dobro = 2*n
+print(dobro)
+print('fim')
+
+Não ocorrerá nenhum conflito. Pois na compração, não houve alteração em uma mesma linha, 
+apenas adição de algoritmo
